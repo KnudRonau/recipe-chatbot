@@ -15,14 +15,21 @@ public class Project {
      * @param args application arguments
      */
     static public void main(String... args) {
+
+        new ProjectRunner().runProject();
+
+
         /*
             Dummy implementation. Replace with your own solution.
-         */
+
         try (InputStream inputStream = Project.class.getResourceAsStream("/tmp.txt")) {
             assert inputStream != null;
             System.out.println(new String(inputStream.readAllBytes()));
         } catch (IOException | AssertionError e) {
             e.printStackTrace();
         }
+
+
+         */
     }
 }
