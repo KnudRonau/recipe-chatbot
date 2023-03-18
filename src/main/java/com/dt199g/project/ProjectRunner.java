@@ -31,11 +31,14 @@ public class ProjectRunner {
             }
         })
                 .observeOn(Schedulers.io())
-                .map(s -> s.toString())
+                //.map()
+                //.map(s -> s.toString())
                 .subscribe(this::getByUserInput);
     }
 
-    //private List<>
+    private List<Recipe> filterByIngredient(String s) {
+
+    }
 
     private List<Recipe> loadRecipes() {
         String jsonRecipes = "";
