@@ -1,13 +1,24 @@
 package com.dt199g.project;
 
+/**
+ * Class representing a food recipe. All variables are final, and only getters are implemented.
+ *
+ * @author Knud Ronau Larsen
+ */
 public class Recipe {
     private final String name;
     private final int cookingTime;
     private final String ingredients;
     private final String guide;
 
+    /**
+     * Constructor for recipe
+     * @param name The name of the recipe
+     * @param cookingTime the time it takes to make it in minutes
+     * @param ingredients The ingredients required
+     * @param guide A guide on how to cook the recipe
+     */
     public Recipe(String name, int cookingTime, String ingredients, String guide) {
-
         this.name = name;
         this.cookingTime = cookingTime;
         this.ingredients = ingredients;
@@ -30,9 +41,4 @@ public class Recipe {
         return guide;
     }
 
-    public void printData() {
-        System.out.printf("\n\nThis is a recipe for %s, that takes %d minutes to cook." +
-                "\nIt has the following ingredients:\n%s \nIt is made in the following way:\n%s\n", name, cookingTime, ingredients, guide);
-        System.out.println("\nThis disk too " + cookingTime + " to finish\n");
-    }
 }

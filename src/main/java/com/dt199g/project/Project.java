@@ -1,15 +1,10 @@
 package com.dt199g.project;
 
-import io.reactivex.rxjava3.core.Observable;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
 
 /**
- * ...
+ * The programs starting point, containing main method, which runs runProject.
  *
- * @author ...
+ * @author Knud Ronau Larsen
  */
 public class Project {
 
@@ -18,20 +13,6 @@ public class Project {
      * @param args application arguments
      */
     static public void main(String... args) {
-
         new ProjectRunner().runProject();
-
-        /*
-            Dummy implementation. Replace with your own solution.
-
-        try (InputStream inputStream = Project.class.getResourceAsStream("/tmp.txt")) {
-            assert inputStream != null;
-            System.out.println(new String(inputStream.readAllBytes()));
-        } catch (IOException | AssertionError e) {
-            e.printStackTrace();
-        }
-
-
-         */
     }
 }
